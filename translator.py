@@ -3,6 +3,7 @@ from symbols import remove_symbols
 
 checks = [RegCheck(r'(?<=[a-z])ti(?=[a,e,i,o,u])',1),
           RegCheck(r'or',3),
+          RegCheck(r"(?<=[a-z])oo", 9),
           RegCheck(r'o(?=[a-z])',0),
           RegCheck(r'r',2),
           RegCheck(r"l",2),
