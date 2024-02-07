@@ -9,7 +9,7 @@ checks = [
     RegCheck(r'ou', 3),
     RegCheck(r"(?<=[a-z])oo", 9),
     RegCheck(r'o(?=[a-z])', 0),
-    RegCheck(r'r(?![^a-z])', 2),
+    RegCheck(r'r(?=[a-z])', 2),
     RegCheck(r"l(?!e[^a-z])(?![^a-z])", 2),
     RegCheck(r"(?<=[^aeiouw])(?<=[a-z])a", 4),
     RegCheck(r"(?<=[^aeiouw])(?<=[a-z])e(?=[a-z])", 5),
