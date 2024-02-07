@@ -2,7 +2,7 @@
 # SYMBOL_START can be set arbitrarily but should be really high
 # SYMBOL_ENTRIES is a list of substitutions to use
 SYMBOL_START = 880
-SYMBOL_TEXT = ["aw","sh","w","ow","wa","we","wi","wo","wu","woo"]
+SYMBOL_TEXT = ["aw","sh","w","ow","wa","we","wi","wo","wu","woo", "ah", "eer","owr"]
 
 def remove_symbols(string):
     new_string = ""

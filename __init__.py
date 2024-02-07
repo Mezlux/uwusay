@@ -1,14 +1,28 @@
 import translator
 import sys
 
-in_file = open(sys.argv[1], "r", encoding="utf-8")
+using_file = False
 
-out_file = open("out.txt","w", encoding="utf-8")
+if len(sys.argv) == 1:
+  input = input("Inpwut: ")
+else:
+  using_file = True
+  in_file = open(sys.argv[1], "r", encoding="utf-8")
+  input = in_file.read()
+
+out_file = open("out.txt", "w", encoding="utf-8")
+output = ""
 
 # Read the file, then
 # Ditch having to worry about case sentivity by making it
 # lowercase, then translate and output
-out_file.write(translator.translate(in_file.read().lower()))
+output = translator.translate(input.lower())
+print(output)
+print("----------------------------------")
+print("Awtpwut cwan bwe fwound in out.txt")
+out_file.write(output)
 
 out_file.close()
-in_file.close()
+
+if using_file:
+  in_file.close()
